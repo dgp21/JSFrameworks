@@ -1,0 +1,9 @@
+<% include header %>
+
+<h1>Bands</h1>
+
+<% bands.forEach(function(band) { %>
+    <h2><%= band.name %></h2>
+    <p>Formed: <%= band.formed %></p>
+    <p>Genre: <%= band.genre %></p>
+<% }); %>h

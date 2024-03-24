@@ -1,0 +1,15 @@
+<html>
+    <head></head>
+    <body>
+<h1>My Favorite Actors</h1>
+<div class="actors-list">
+  <% actors.forEach(function(actor) { %>
+    <div class="actor-item">
+      <img src="<%= actor.image %>" alt="<%= actor.name %>">
+      <h2><%= actor.name %></h2>
+      <p><%= actor.bio %></p>
+    </div>
+  <% }); %>
+</div>
+</body>
+</html>

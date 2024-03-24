@@ -1,0 +1,9 @@
+<% include header %>
+
+<h1>Singers</h1>
+
+<% singers.forEach(function(singer) { %>
+    <h2><%= singer.name %></h2>
+    <p>Birth: <%= singer.birth %></p>
+    <p>Genre: <%= singer.genre %></p>
+<% }); %>

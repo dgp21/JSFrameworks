@@ -1,0 +1,9 @@
+<% include header %>
+
+<h1>Actors</h1>
+
+<% actors.forEach(function(actor) { %>
+    <h2><%= actor.name %></h2>
+    <p>Birth: <%= actor.birth %></p>
+    <p>Bio: <%= actor.bio %></p>
+<% }); %>

@@ -1,0 +1,9 @@
+<% include header %>
+
+<h1>Public Figures</h1>
+
+<% publicFigures.forEach(function(publicFigure) { %>
+    <h2><%= publicFigure.name %></h2>
+    <p>Occupation: <%= publicFigure.occupation %></p>
+    <p>Bio: <%= publicFigure.bio %></p>
+<% }); %>
